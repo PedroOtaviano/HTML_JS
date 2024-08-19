@@ -22,8 +22,6 @@ const form = document.getElementById("form");
         }
     });
 
-
-
 form.addEventListener("click", function(e){
     document.querySelector(".error").style.display = "none";
     document.querySelector(".success").style.display = "none";
