@@ -1,48 +1,83 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    margin: 80px auto;
-    max-width: 640px;
-    width: 100%;
-    padding: 8px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(194, 6, 6, 0.1);
+    padding: 20px;
+    width: 300px;
 }
 
-input, button{
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 5px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.error, .success {
-    display: block;
+p {
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo das mensagens */
+.error, .success, .equals {
+    display: none;
+    padding: 10px;
+    border-radius: 4px;
     margin-top: 10px;
+    font-size: 16px;
 }
 
-.error{
-    font-size: 16px;
-    background-color: red;
-    color: white;
-    padding: 8px;
+.error {
+    background-color: #f8d7da;
+    color: #811924;
     display: none;
 }
 
-.success{
-    font-size: 16px;
-    background-color: green;
-    color: white;
-    padding: 8px;
+.success {
+    background-color: #d4edda;
+    color: #074b17;
     display: none;
 }
 
-.equals{
-    font-size: 16px;
-    background-color: grey;
-    color: white;
-    padding: 8px;
+.equals {
+    background-color: #e2e3e5;
+    color: #6c757d;
     display: none;
 }
